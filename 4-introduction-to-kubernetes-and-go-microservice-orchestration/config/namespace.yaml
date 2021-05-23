@@ -1,0 +1,7 @@
+---
+apiVersion: v1
+kind: namespace
+meta:
+  name: go-microservice
+  labels:
+    name: go-microservice

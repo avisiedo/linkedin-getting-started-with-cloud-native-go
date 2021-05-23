@@ -1,0 +1,29 @@
+# https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: go-microservice
+
+# bases:
+#   - ../base
+
+resources:
+  # - namespace.yaml
+  - pod.yaml
+  - service.yaml
+  - route.yaml
+
+# generators:
+#   - 
+
+# transformers:
+#   -
+
+# vars:
+#   - name: NAMESPACE
+#     objref:
+#       name: namespace 
+
+configurations:
+  - "kustomizeconfig.yaml"

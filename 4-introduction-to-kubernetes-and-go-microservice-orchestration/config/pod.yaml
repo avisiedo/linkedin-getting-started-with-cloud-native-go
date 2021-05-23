@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-microservice
+  labels:
+    app: go-microservice
+spec:
+  containers:
+  - name: microservice
+    image: quay.io/avisied0/go-cloud-native:latest
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 8080

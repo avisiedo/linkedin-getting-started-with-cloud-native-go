@@ -1,0 +1,13 @@
+Rules:
+  help
+  build
+  test
+  clean
+  all
+
+  vendor
+  run
+
+  container-build
+  container-push
+  container-run
