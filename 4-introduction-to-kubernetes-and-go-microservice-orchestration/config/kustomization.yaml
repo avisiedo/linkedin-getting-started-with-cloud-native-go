@@ -3,14 +3,15 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: go-microservice
+# namespace: default
 
 # bases:
 #   - ../base
 
 resources:
   # - namespace.yaml
-  - pod.yaml
+  # - pod.yaml
+  - deployment.yaml
   - service.yaml
   - route.yaml
 
